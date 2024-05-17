@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<title>Fair of Contradictions</title>
+	<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/header.css' %}">
+	<link rel="shortcut icon" type="image/jpg" href="{% static 'images/favicon.webp' %}"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="{% static 'js/jquery-3.6.0.slim.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/fontawesome.js' %}" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="{% static 'js/header.js'%}"></script>
+</head>
+
+<body>
+	<header>
+		<div class="header-bg"></div>
+		{% block logo %}
+		<a href="/" class="name">Fair of Contradictions</a>
+		{% endblock %}
+		<a href="/" {% block btn1 %}{% endblock %}>ГОЛОВНА</a>
+		<a href="/rules" {% block btn2 %}{% endblock %}>ПРАВИЛА</a>
+		<a href="/client" {% block btn3 %}{% endblock %}>КЛІЄНТ</a>
+		<a href="" style="opacity: 0.2;" {% block btn4 %}{% endblock %}>FAQ</a>
+		<a href="/games" {% block btn5 %}{% endblock %}>МІНІ-ІГРИ</a>
+		<a href="https://docs.google.com/document/d/1m8C_aJYCY_gcJpHumjvQvQWohGyh0ikiyU4nllJ3fug/edit?usp=sharing" target="_blank" {% block btn6 %}{% endblock %}>ДОД-КОНТЕНТ</a>
+		<a href="" style="opacity: 0.2;" {% block btn7 %}{% endblock %}>АДМІНІСТРАЦІЯ</a>
+	</header>
+
+	<main>
+
+	</main>
+
+	<footer>
+		<p style="margin-right: 3vh;">© Fair of Contradictions. Всі права захищені.</p>
+		<p>Сайт підтримується: </p><span><a href="">Skipertale (Dexter#7537)</a></span>
+	</footer>
+</body>
+</html>
